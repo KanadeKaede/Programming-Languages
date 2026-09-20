@@ -44,7 +44,7 @@ def parse_term(chars, original):
 
 
 def parse_factor(chars, original):
-    # <factor> -> ( <expr> ) | <digit>   <-- recursion happens here,
+    # <factor> -> ( <expr> ) | <digit>   < recursion happens here,
     # when '(' sends us back up to parse_expr()
     if not chars:
         raise ValueError(f"unexpected end of input (position {len(original)})")
